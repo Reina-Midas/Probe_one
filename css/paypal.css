@@ -1,0 +1,28 @@
+:root{
+    --green-color: rgb(84,135,42);
+    --yellow-color: rgb(255,255,66);
+    /*Espaciado*/
+    --space: 10Px;
+    --box: 0px 0 2px 1px#e6e5e9;
+    }
+    
+
+body {
+background-color: var(--green-color);
+text-align: center;
+color: var(--yellow-color);
+letter-spacing: 3px;
+font-size: 25px;
+font-weight: normal;
+font-family: Gayathri;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; /*   para que el ancho sea el de la pantalla*/
+}
+
+
+.content_paypal a {
+color: whitesmoke;
+text-decoration: none;
+}

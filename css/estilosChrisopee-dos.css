@@ -1,0 +1,367 @@
+
+/* ---otra forma de importar tipografia
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+/*------VARIABLES ELEMENTOS QUE SE REPITEN--------*/
+
+
+:root{
+--green-color: rgb(84,135,42);
+--yellow-color: rgb(255,255,66);
+/*Espaciado*/
+--space: 10Px;
+--box: 0px 0 2px 1px#e6e5e9;
+}
+
+
+
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  font-family: Gayathri;
+}
+
+
+
+body {
+    /*background-image: linear-gradient(45deg, rgb(223, 190, 220), white);*/
+    background-color: rgb(255, 255, 250); /*FONDO DE TODO
+    /*background-image: url(../images/azul.jpg);*/
+
+}
+
+nav{
+    display: flex;
+    background-color: rgb(84,135,42);
+    padding: 10px;
+    color: white;
+    justify-content: center;/* o space bet para distribuirlos*/
+    align-items: center;
+    /*position: sticky;*/ /*PARA FIJARLO*/
+    top: 0;
+}
+
+
+nav a {
+  text-decoration: none;
+}
+nav ul{
+display: flex;
+}
+
+nav li {
+padding-left: 10%;
+list-style: none;
+align-items: center;
+justify-content: center;
+}
+
+
+nav li a {
+    /*display: inline-block;*//* CON ESTE Y TRANSFORM SE LOGRA UN EFECTO DE MOV EN LA BARRA*/
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 0px;
+    font-size: 25px;
+    font-weight: 500;
+    
+    }
+
+    nav li a:hover{
+    /*transform: translateY(3px);
+    background-color: blueviolet;*/
+    color: var(--yellow-color);
+    }
+
+
+/*nav li a {
+color: white;
+text-decoration: none;
+letter-spacing: 2px;
+padding: 0px;
+font-size: 25px;
+font-weight: 500;
+transition: .5s ease all;
+}
+
+
+nav li a:hover{
+transform: translateY(20px);
+color: var(--yellow-color);
+}
+*/
+
+
+h1{
+color: var(--yellow-color);
+font-family: Mate SC;
+font-size: 45px;
+letter-spacing: 15px;
+}
+
+h1:hover{
+color: white;
+}
+
+/*------PARA LOS LABELS------*/
+
+label{
+  font-size-adjust: inherit;
+  font-family:Gayathri ;
+}
+
+
+/*------PARA LOS LABELS------*/
+
+
+
+/*--------Main Section------------*/
+
+.main-section{
+padding: -3%; /* con este se pego a la barra principal*/
+text-align: center;
+}
+
+.products{
+background-image: url("../images/frontal-dos.jpg");
+background-size: 80%;
+/*background-attachment: fixed;*/
+/*max-height: initial;*/
+background-position: center top;
+background-repeat: no-repeat;
+padding: 17%;/*DEPENDE DEL TAM DE LAS IMAGENES DE PRODUCT EN EL EJER ES DE 20%*/
+display: flex;
+/*border: 2px solid red;*/
+}
+
+.product{
+/*padding: 20px;*/
+margin-top:-140px;
+margin: 5px;
+background-color: transparent; /*red;*/
+border: 1px solid transparent; /*black;*/
+width: auto;
+height: auto;
+flex-shrink: 1
+}
+
+.content{
+padding: 25px;
+background: transparent; /*white;*/
+border-radius: 3px;
+/*box-shadow: 0px 0 2px 1px #e6e5e9;
+align-items: baseline;
+flex-wrap: wrap;*/
+}
+
+.image-content {
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+vertical-align: baseline;
+}   
+
+
+.titulo{
+    transition: .3s ease all;
+}
+.titulo:hover { /* PARA QUE LA LETRA SE PONGA VERDE Y SE EXPANDA*/
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.uno{
+  transition: .3s ease all;
+}
+.uno:hover { /* PARA QUE LA LETRA SE PONGA VERDE Y SE EXPANDA*/
+font-size: 25px;
+letter-spacing: 2px;
+color: var(--green-color);
+}
+
+p{
+height: 69px; /* EN ESTE EJEMPLO LO USO PARA QUE EL TAM SEA UNIFORME*/
+}
+
+.img {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    /*width: 75%;*/
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.titulo{
+text-align: center;
+}
+
+.description{
+text-align: center;
+}
+
+
+.main_button{
+background-color: var(--green-color);
+width: 100%;
+justify-items: center;
+/*margin-left: 2%;*/
+padding: var(--space);
+font-size: 25px;
+color: white;
+border:0;
+cursor: pointer;/* PARA LA MANITO DEL MAUSE*/
+border-radius: 3px;
+}
+
+.main_button:hover{
+background-color: goldenrod;
+}
+
+/*--- Beneficios--- */
+
+
+.beneficios{
+    margin-top: -100px;
+    padding: 30px;
+    padding-top: 0px;
+    display: flex;
+    border: 2px solid transparent /* red;*/
+  }
+  
+  .beneficio{
+    text-align: center;
+    justify-content: baseline;
+    padding-top: 10px;
+    margin: auto;
+    border: 2px solid transparent /* green;*/
+  }
+  
+  .beneficio img{
+    height: 200px;
+    width:300px;
+    object-fit: cover;
+  }
+  
+  .text_beneficio{
+  padding: 5px;
+  text-align: center;
+  color: black;
+  }
+  /* Beneficios End*/
+  
+  /*---------MENTIONS--------*/
+  .mentions {
+      display: flex;
+      padding: 5%;
+  }
+
+  .mention img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  h2.mentions_title{
+    margin-top: 40px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .mention{
+    padding: var(--space);
+    background-color: transparent;/* yellow;*/
+  }
+  .content_mention{
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+  }
+  .mention, .text{
+    padding: var(--space);
+    text-align: center;
+  }
+
+/*----END MENTIONS----*/
+
+
+
+
+/*----ANFANFANG PRODUKTE----*/
+
+
+  .products-title{
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .parrafo {
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+  /*--END PRODUKTE-------*/
+
+
+  /*----venta-----*/
+.modulo_pago {
+  background-color: white;
+  box-shadow: var(--box);
+  padding: 10px;
+  padding-right: 10px;
+  }
+  
+  .modulo_pago_images{
+    text-align: center;
+    justify-content: center;
+}
+
+.data{
+/*margin-top: var(--space);*/
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: 2px solid var(--green-color); /*PARA QUITAR EL BORDE/SOMBRA EXTRA DE LAS CAJAS*/
+}
+
+.modulo_pago .main_button {
+  /*para que solo afecte a este boton*/
+  margin-top: 10px;
+}
+  
+  /*----venta final-----*/
+  
+  
+  /* ------------------------------------------- Footer */
+footer{
+  height: 100px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--normal);
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: var(--space);
+    padding-top: 70px;
+    color: var(--white-color);
+  }
+  
+.footer{
+    background-color: var(--green-color);
+    color: var(--yellow-color);
+    font-family: Mate SC;
+}
+
+.contact {
+  color:var(--yellow-color)
+}
+/* ----------------------------------------------End Footer */

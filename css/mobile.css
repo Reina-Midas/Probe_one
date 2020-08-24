@@ -1,0 +1,51 @@
+
+@media (max-width: 880px) {
+
+  h1{
+    text-align: inherit;
+  }
+
+  nav, nav ul, nav li, nav li a{
+    text-align: inherit;
+    display: inherit;
+    font-size: inherit;
+  } 
+
+  .products{
+    display: inherit;
+    height: auto;
+    background-image: auto;
+    background-size: contain;
+  }
+  
+  .product{
+    margin-top: auto;
+  }
+  .main-section{
+    padding: 0%;
+  }
+
+.content{
+  align-items: inherit;
+  flex-wrap: inherit;
+  width: inherit;
+  height: inherit;
+}
+
+
+.beneficios, .mentions{
+  margin-top: inherit;
+  padding: inherit;
+  display: initial;
+}
+
+footer{
+  margin-top: inherit;
+  margin-bottom: inherit;
+  display: inherit;
+  justify-content: inherit;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  font-size: inherit;
+  padding:var(--space);
+  color: var(--white-color);
